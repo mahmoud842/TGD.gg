@@ -1,0 +1,9 @@
+my puuid: Y2vViRu38bMONowiShf2vnl_lkK5J_R7AvU0QXn4GKx9iEIRRp-h2HoKmUioMtVfHR3qku27En8lfw
+https://europe.api.riotgames.com
+https://eun1.api.riotgames.com
+
+url = 'https://europe.api.riotgames.com/lol/match/v5/matches/EUN1_3671129910'
+res = requests.get(url,
+                   headers={"X-Riot-Token": "RGAPI-44044ca5-6993-4ab1-b0e1-1a6ca16bb508"})
+data = json.loads(res.text)
+print(data)
