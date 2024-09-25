@@ -4,6 +4,6 @@ https://eun1.api.riotgames.com
 
 url = 'https://europe.api.riotgames.com/lol/match/v5/matches/EUN1_3671129910'
 res = requests.get(url,
-                   headers={"X-Riot-Token": "RGAPI-44044ca5-6993-4ab1-b0e1-1a6ca16bb508"})
+                   headers={"X-Riot-Token": API_KEY})
 data = json.loads(res.text)
 print(data)
